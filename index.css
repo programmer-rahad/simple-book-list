@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial;
+}
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.todo-app {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+}
+.todo-app * {
+  display: block;
+}
+.todo-app > h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.todo-app label {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: monospace;
+  text-shadow: 0px 0px 1px rgb(0 0 0 / 50%);
+  color: #bbb;
+  margin-bottom: 7px;
+}
+.todo-app input {
+  width: 100%;
+  padding: 11px 17px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+.todo-app input:focus {
+  border-color: #000;
+  outline: none;
+}
+@media (max-width: 650px) {
+  .table-wrapper {
+    overflow-x: scroll;
+  }
+  .table-wrapper .table {
+  }
+}
+@media (max-width: 650px) {
+  .table-wrapper .table {
+    min-width: 600px;
+  }
+}
+.table {
+  border: 1px solid;
+  border-top: 0;
+}
+.table .table-row {
+  overflow: hidden;
+  border-top: 1px solid;
+}
+.table .table-row:first-child {
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.table .table-row .table-column:not(:last-child) {
+  border-right: 1px solid;
+}
+
+.table .table-row:first-child .table-column {
+  padding: 7px;
+}
+.table .table-row .table-column {
+  width: 25%;
+  float: left;
+  text-align: center;
+  padding: 5px;
+}
+.table .table-row .table-column:nth-last-child(1),
+.table .table-row .table-column:nth-last-child(2) {
+  width: 12.5%;
+  cursor: pointer;
+}
+
+.confirmation {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* display: none; */
+}
+.confirmation button {
+  background: transparent;
+  border: 1px solid;
+  color: #fff;
+  padding: 8px 25px;
+  text-transform: uppercase;
+  margin: 5px;
+  cursor: pointer;
+}
+.confirmation button:hover {
+  color: red;
+}
+.confirmation button:first-child:hover {
+  color: green;
+}
+
+.clear-btn {
+  border: 1px solid #000;
+  padding: 6px 15px;
+  margin-top: 15px;
+}
+.clear-btn:hover {
+  cursor: pointer;
+}

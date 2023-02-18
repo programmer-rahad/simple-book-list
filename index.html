@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Book List ( Tuesday 30 November 2021 ) </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <section id="todo-section">
+        <div class="container">
+            <div class="todo-app">
+                <h2> Vanilla Javascript Book List ( CRUD ) </h2>
+                <form action="#">
+                    <label for="book-title">Title</label>
+                    <input value="Title one" type="text" id="book-title">
+                    <label for="book-author">Author</label>
+                    <input value="Author 1" type="text" id="book-author">
+                    <label for="book-year">Year</label>
+                    <input value="2023" type="text" id="book-year">
+                    <input type="submit" value="Add Book">
+                </form>
+                <div class="table-wrapper">
+                    <div class="table">
+                        <div class="table-row">
+                            <div class="table-column">
+                                Title
+                            </div>
+                            <div class="table-column">
+                                Author
+                            </div>
+                            <div class="table-column">
+                                Year
+                            </div>
+                            <div class="table-column">
+                                Edit
+                            </div>
+                            <div class="table-column">
+                                Delete
+                            </div>
+                        </div>
+                    </div>
+                    <button class="clear-btn">Clear All</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
